@@ -1,0 +1,236 @@
+body {
+  background: url("images/pattern-background-desktop-light.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--grey-50);
+}
+
+.start-menu {
+  padding: 4rem 8rem;
+  height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--purple-600);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--purple-600);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.start-menu-container {
+  display: flex;
+  gap: 8rem;
+  margin-top: 6rem;
+}
+
+.start-menu-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.start-menu-info-title {
+  margin-bottom: 3rem;
+  color: var(--blue-900);
+}
+
+.start-menu-info-title-light {
+  font-weight: var(--font-weight-2-light);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--font-letter-spacing-2);
+  line-height: var(--font-line-height-2);
+}
+
+.start-menu-info-title-medium {
+  font-weight: var(--font-weight-2-medium);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--font-letter-spacing-2);
+  line-height: var(--font-line-height-2);
+}
+
+.start-menu-info-text {
+  color: var(--grey-500);
+  font-style: var(--font-style-6);
+  font-size: var(--font-size-6);
+  letter-spacing: var(--font-letter-spacing-6);
+  line-height: var(--font-line-height-6);
+}
+
+.start-menu-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+}
+
+.start-menu-buttons a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.start-menu-button-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+}
+
+.start-menu-button-title {
+  color: var(--blue-900);
+}
+
+.HTML {
+  background-color: var(--orange-50);
+}
+
+.CSS {
+  background-color: var(--green-100);
+}
+
+.JavaScript {
+  background-color: var(--blue-50);
+}
+
+.Accessibility {
+  background-color: var(--purple-100);
+}
+
+@media screen and (max-width: 768px) and (max-width: 1024px) {
+  .start-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+
+  .start-menu-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+
+  .start-menu-info {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .start-menu-info-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+  }
+
+  .start-menu-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.5rem 0 1.5rem;
+  }
+
+  .start-menu-info-title-light {
+    font-weight: var(--font-weight-2-light-mobile);
+    font-size: var(--font-size-2-mobile);
+    letter-spacing: var(--font-letter-spacing-2-mobile);
+    line-height: var(--font-line-height-2-mobile);
+  }
+
+  .start-menu-info-title-medium {
+    font-weight: var(--font-weight-2-medium-mobile);
+    font-size: var(--font-size-2-mobile);
+    letter-spacing: var(--font-letter-spacing-2-mobile);
+    line-height: var(--font-line-height-2-mobile);
+  }
+
+  .start-menu-container {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .start-menu-info-text {
+    font-style: var(--font-style-5-mobile);
+    font-weight: var(--font-style-5-mobile);
+    font-size: var(--font-size-5-mobile);
+    letter-spacing: var(--font-letter-spacing-5-mobile);
+    line-height: var(--font-line-height-5-mobile);
+  }
+
+  .start-menu-button-title {
+    font-weight: 700;
+    font-size: var(--font-size-4-mobile);
+    letter-spacing: var(--font-letter-spacing-4-mobile);
+    line-height: var(--font-line-height-4-mobile);
+  }
+
+  button.button-sm {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}

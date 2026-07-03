@@ -1,0 +1,165 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey-500: #626c7f;
+  --grey-50: #f4f6fa;
+  --blue-950: #2d3949;
+  --blue-900: #313e51;
+  --blue-850: #3b4d66;
+  --blue-500: #306aff;
+  --blue-300: #abc1e1;
+  --blue-100: #edf1f9;
+  --blue-50: #ebf0ff;
+  --green-500: #2fd887;
+  --green-100: #e0fdef;
+  --purple-600: #a729f5;
+  --purple-100: #f6e7ff;
+  --orange-400: #ff7e35;
+  --orange-50: #fff5ed;
+  --red-500: #ee5454;
+
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1600: 128px;
+  --spacing-1800: 144px;
+  --spacing-2300: 184px;
+
+  --font-rubik: "Rubik", sans-serif;
+
+  --font-weight-1: 500;
+  --font-size-1: 144px;
+  --font-letter-spacing-1: 0%;
+  --font-line-height-1: 100%;
+
+  --font-weight-1-mobile: 500;
+  --font-size-1-mobile: 88px;
+  --font-letter-spacing-1-mobile: 0%;
+  --font-line-height-1-mobile: 100%;
+
+  --font-weight-2-light: 300;
+  --font-weight-2-medium: 500;
+  --font-size-2: 64px;
+  --font-letter-spacing-2: 0%;
+  --font-line-height-2: 100%;
+
+  --font-weight-2-medium-mobile: 500;
+  --font-weight-2-light-mobile: 300;
+  --font-size-2-mobile: 40px;
+  --font-letter-spacing-2-mobile: 0%;
+  --font-line-height-2-mobile: 100%;
+
+  --font-weight-3: 500;
+  --font-size-3: 36px;
+  --font-letter-spacing-3: 0%;
+  --font-line-height-3: 120%;
+
+  --font-weight-3-mobile: 500;
+  --font-size-3-mobile: 20px;
+  --font-letter-spacing-3-mobile: 0%;
+  --font-line-height-3-mobile: 120%;
+
+  --font-weight-4: 500;
+  --font-size-4: 28px;
+  --font-letter-spacing-4: 0%;
+  --font-line-height-4: 100%;
+
+  --font-weight-4-mobile: 500;
+  --font-size-4-mobile: 18px;
+  --font-letter-spacing-4-mobile: 0%;
+  --font-line-height-4-mobile: 100%;
+
+  --font-weight-5: 400;
+  --font-size-5: 24px;
+  --font-letter-spacing-5: 0%;
+  --font-line-height-5: 150%;
+
+  --font-style-5-mobile: italic;
+  --font-weight-5: 700;
+  --font-size-5-mobile: 14px;
+  --font-letter-spacing-5-mobile: 0%;
+  --font-line-height-5-mobile: 150%;
+
+  --font-style-6: italic;
+  --font-size-6: 20px;
+  --font-letter-spacing-6: 0%;
+  --font-line-height-6: 150%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-rubik);
+}
+
+button.button-sm {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 35.25rem;
+  height: 88px;
+  padding: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  border: none;
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-4);
+  letter-spacing: var(--font-letter-spacing-4);
+  line-height: var(--font-line-height-4);
+  cursor: pointer;
+}
+
+button.button-lg {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.purple {
+  background-color: var(--purple-600);
+  color: var(--white);
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-4);
+  letter-spacing: var(--font-letter-spacing-4);
+  line-height: var(--font-line-height-4);
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.theme-container {
+  display: flex;
+  justify-content: end;
+  flex: 1;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) and (max-width: 1024px) {
+  button.button-sm {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .menu-header {
+    width: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .menu-header {
+    width: 100%;
+  }
+}

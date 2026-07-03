@@ -1,0 +1,206 @@
+.score-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 8rem;
+  height: 100vh;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 9rem;
+  margin-top: 6rem;
+}
+
+.score-menu-info-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.score-menu-info-header {
+  display: flex;
+  justify-content: center;
+}
+
+.score-menu-info-header-title {
+  color: var(--blue-900);
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-4);
+  letter-spacing: var(--font-letter-spacing-4);
+  line-height: var(--font-line-height-4);
+}
+
+.score-menu-info-title-light {
+  color: var(--blue-900);
+  font-weight: var(--font-weight-2-light);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--font-letter-spacing-2);
+  line-height: var(--font-line-height-2);
+}
+
+.score-menu-info-title-medium {
+  color: var(--blue-900);
+  font-weight: var(--font-weight-2-medium);
+  font-size: var(--font-size-2);
+  letter-spacing: var(--font-letter-spacing-2);
+  line-height: var(--font-line-height-2);
+}
+
+.score-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.score-menu-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 564px;
+  min-height: 388px;
+  padding: 3rem;
+  background-color: var(--white);
+  gap: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.score-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.score {
+  color: var(--blue-900);
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-1);
+  letter-spacing: var(--font-letter-spacing-1);
+  line-height: var(--font-line-height-1);
+}
+
+.score-info {
+  color: var(--grey-500);
+  font-weight: var(--font-weight-5);
+  font-size: var(--font-size-5);
+  letter-spacing: var(--font-letter-spacing-5);
+  line-height: var(--font-line-height-5);
+}
+
+.play-again-btn {
+  background-color: var(--purple-600);
+  border: none;
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .score-menu {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+
+  .score-menu-container {
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .score-menu {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .score-menu-info-title-light {
+    font-weight: var(--font-weight-2-light-mobile);
+    font-size: var(--font-size-2-mobile);
+    letter-spacing: var(--font-letter-spacing-2-mobile);
+    line-height: var(--font-line-height-2-mobile);
+  }
+
+  .score-menu-info-title-medium {
+    font-weight: var(--font-weight-2-medium-mobile);
+    font-size: var(--font-size-2-mobile);
+    letter-spacing: var(--font-letter-spacing-2-mobile);
+    line-height: var(--font-line-height-2-mobile);
+  }
+
+  .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .score-menu-container {
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+
+  button.button-lg {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .score-menu-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+    min-height: 242px;
+    padding: 2rem;
+    background-color: var(--white);
+    gap: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  button.button-lg {
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.75rem;
+    font-weight: var(--font-weight-4-medium-mobile);
+    font-size: var(--font-size-4-mobile);
+    letter-spacing: var(--font-letter-spacing-4-mobile);
+    line-height: var(--font-line-height-4-mobile);
+  }
+
+  .score {
+    font-weight: var(--font-weight-1-mobile);
+    font-size: var(--font-size-1-mobile);
+    letter-spacing: var(--font-letter-spacing-1-mobile);
+    line-height: var(--font-line-height-1-mobile);
+  }
+
+  .score-info {
+    font-weight: var(--font-weight-4-mobile);
+    font-size: var(--font-size-4-mobile);
+    letter-spacing: var(--font-letter-spacing-4-mobile);
+    line-height: var(--font-line-height-4-mobile);
+  }
+
+  .score-menu-info-header-title {
+    font-weight: var(--font-weight-4-mobile);
+    font-size: var(--font-size-4-mobile);
+    letter-spacing: var(--font-letter-spacing-4-mobile);
+    line-height: var(--font-line-height-4-mobile);
+  }
+
+  .start-menu-button-icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .start-menu-button-icon-container img {
+    width: 28px;
+    height: 28px;
+  }
+}
