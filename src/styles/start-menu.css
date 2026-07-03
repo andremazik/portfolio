@@ -1,5 +1,5 @@
 body {
-  background: url("images/pattern-background-desktop-light.svg");
+  background: url("/portfolio/images/pattern-background-desktop-light.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--grey-50);
